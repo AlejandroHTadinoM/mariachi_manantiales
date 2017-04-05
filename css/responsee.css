@@ -4,6 +4,10 @@
  * Copyright 2016, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
+@font-face {
+    font-family: western;
+    src: url("western.ttf");
+}
 * {  
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -11,7 +15,7 @@
   margin:0;	
   }
 body {
-  background-image: url(../img/footer_lodyas.png);
+  background-image: url(../img/bg.png);
   background-repeat: repeat;
   font-size:100%;
   font-family:"Open Sans",Arial,sans-serif;
@@ -20,9 +24,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color:#444;
   font-weight: normal;
-  margin:0.2em 0 0.2em 0;    
+  margin:0.2em 0 0.2em 0;
 }
-h1 {font-size:2.4em;}
+h1 {
+  font-size:2.4em;
+  font-family: western;
+}
 h2 {font-size:2em;}  
 h3 {font-size:1.6em;}  
 h4 {font-size:1.2em;}  
@@ -71,7 +78,7 @@ form {line-height:1.4em;}
 nav {
   display:block;
   width:100%;
-  background:#005fbe;
+  background:#1976D2;
 }
 .line::after, nav::after, .center::after, .box::after, .margin::after {clear: both;}
 .line::before, .line::after, nav::before, nav::after, .center::before, .center::after, .box::before, .box::after, .margin::before, .margin::after {
@@ -98,7 +105,7 @@ nav {
   min-width:100%;
   padding:0.625em;
 }
-.top-nav li a:hover, .aside-nav li a:hover {background:#000;}
+.top-nav li a:hover, .aside-nav li a:hover {background:#283593;}
 .top-nav li ul {display:none;}
 .top-nav li ul li {
   float:none;
@@ -134,7 +141,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.7em;
   margin:0 0.625em;
 }
-.top-nav .active-item a {background:none repeat scroll 0 0 #000;}
+.top-nav .active-item a {background:none repeat scroll 0 0 #283593;}
 .aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
   background:none repeat scroll 0 0 #999;
   color:#fff;
@@ -486,4 +493,42 @@ nav {
   float:none;
   margin:0 auto;
   display:block;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.bullet {
+  width: 100%;
+  height: 200px;
+}
+
+.card {
+  height: 100%;
+  margin: 2rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, .2);
+  transition: all .3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, .4);
+  border-bottom: 2px solid #283593;
+}
+
+.card p {
+  padding: 1rem;
+  font-size: 1.6em;
+}
+
+.lead {
+  font-weight: 300;
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
 }
