@@ -532,3 +532,12 @@ nav {
 .page-title {
   text-align: center;
 }
+.icon{
+  font-size: 2em !important;
+  color: #212121;
+  margin-right: 12px;
+  transition: color .5s ease-in-out;
+}
+.icon:hover {
+  color: #1976D2;
+}
